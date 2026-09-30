@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" role="img" aria-labelledby="title desc">
+  <title id="title">Power icon</title>
+  <desc id="desc">A gold lightning bolt inside a cream circle.</desc>
+  <circle cx="170" cy="170" r="154" fill="#f7e8ad" stroke="#6b5537" stroke-width="12"/>
+  <path d="m187 57-79 137 54-11-14 99 83-143-57 12z" fill="#f6a51c" stroke="#6b5537" stroke-width="7" stroke-linejoin="round"/>
+  <g stroke="#8b7047" stroke-width="5" stroke-linecap="square">
+    <path d="M96 96 78 78M244 96l18-18M96 244l-18 18M244 244l18 18M83 170H62M257 170h21"/>
+  </g>
+</svg>

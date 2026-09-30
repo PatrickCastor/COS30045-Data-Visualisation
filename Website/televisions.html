@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Television energy consumption reference data and interactive appliance calculator.">
+  <title>Televisions | Appliance Energy Consumption</title>
+  <link rel="icon" href="assets/img/PowerIcon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/calculator.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ==================== Site header ==================== -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Appliance energy consumption home">
+        <img src="assets/img/PowerIcon.png" alt="">
+        <span>Appliance Energy<br><small>Consumption / AU</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="televisions.html" aria-current="page">Televisions</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Televisions</span>
+    </nav>
+
+    <!-- ==================== Page header ==================== -->
+    <section class="page-header">
+      <div class="page-header-copy">
+        <span class="kicker">COS30045 Unit Demonstration · Stage 02 Televisions</span>
+        <h1>Television Energy Consumption</h1>
+        <p>Televisions are among the most frequently used appliances in Australian homes. Screen technology, size, resolution and brightness settings influence total power draw and annual running costs.</p>
+      </div>
+      <div class="status-chip"><span class="status-dot"></span> SAMPLE DATA · TV MODELS</div>
+    </section>
+
+    <!-- ==================== Quick insights ==================== -->
+    <section class="metric-grid" aria-label="Quick television insights">
+      <div class="metric">
+        <span class="label">Market dominance</span>
+        <strong>55–65 inches</strong>
+        <small>Average Australian TV screen size</small>
+        <div class="metric-foot">+12% diagonal growth since 2018</div>
+      </div>
+      <div class="metric">
+        <span class="label">Household runtime</span>
+        <strong>3.2 hours / day</strong>
+        <small>Average daily active viewing time</small>
+        <div class="metric-foot">Peak operation: 18:00–22:30 AEST</div>
+      </div>
+      <div class="metric">
+        <span class="label">Operational cost</span>
+        <strong>$35–$115 AUD</strong>
+        <small>Estimated annual running cost range</small>
+        <div class="metric-foot">Modelled at 32.0c/kWh benchmark</div>
+      </div>
+    </section>
+
+    <!-- ==================== TV categories ==================== -->
+    <section class="section" aria-labelledby="categories-title">
+      <div class="section-head">
+        <div>
+          <h2 id="categories-title">Common Television Categories</h2>
+          <p>Comparative analysis across standard consumer panel classifications.</p>
+        </div>
+        <span class="tag warm">4 REFERENCE TIERS</span>
+      </div>
+
+      <div class="grid-4">
+        <article class="card model-card">
+          <span class="tag">Compact / Secondary</span>
+          <h3>32&quot; LED HD Bedroom TV</h3>
+          <span class="type">Standard LED LCD</span>
+          <div class="spec-list">
+            <div class="spec-row">Power draw: <strong>45 W</strong></div>
+            <div class="spec-row">Daily use: <strong>2.5 hrs/day</strong></div>
+            <div class="spec-row">Annual energy: <strong>41 kWh/yr</strong></div>
+          </div>
+          <div class="cost-row">Annual running <strong>~$13.15</strong></div>
+        </article>
+
+        <article class="card model-card">
+          <span class="tag">Standard Living</span>
+          <h3>55&quot; 4K UHD LED Smart TV</h3>
+          <span class="type">Direct LED LCD</span>
+          <div class="spec-list">
+            <div class="spec-row">Power draw: <strong>95 W</strong></div>
+            <div class="spec-row">Daily use: <strong>4.0 hrs/day</strong></div>
+            <div class="spec-row">Annual energy: <strong>139 kWh/yr</strong></div>
+          </div>
+          <div class="cost-row">Annual running <strong>~$44.40</strong></div>
+        </article>
+
+        <article class="card model-card">
+          <span class="tag warm">High Brightness</span>
+          <h3>65&quot; 4K QLED Premium TV</h3>
+          <span class="type">Quantum Dot LED</span>
+          <div class="spec-list">
+            <div class="spec-row">Power draw: <strong>145 W</strong></div>
+            <div class="spec-row">Daily use: <strong>4.0 hrs/day</strong></div>
+            <div class="spec-row">Annual energy: <strong>212 kWh/yr</strong></div>
+          </div>
+          <div class="cost-row">Annual running <strong>~$67.80</strong></div>
+        </article>
+
+        <article class="card model-card">
+          <span class="tag warm">High Contrast Flagship</span>
+          <h3>65&quot; 4K OLED Cinema TV</h3>
+          <span class="type">Organic Light Emitting Diode</span>
+          <div class="spec-list">
+            <div class="spec-row">Power draw: <strong>180 W</strong></div>
+            <div class="spec-row">Daily use: <strong>4.0 hrs/day</strong></div>
+            <div class="spec-row">Annual energy: <strong>263 kWh/yr</strong></div>
+          </div>
+          <div class="cost-row">Annual running <strong>~$84.10</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== Model comparison ==================== -->
+    <section class="section" aria-labelledby="comparison-title">
+      <div class="table-panel panel">
+        <div class="table-toolbar">
+          <div>
+            <h2 id="comparison-title">Comprehensive Model Comparison</h2>
+            <p>Displaying five illustrative sample television models.</p>
+          </div>
+          <div class="table-tags">
+            <span>CSV READY</span>
+            <span>D3 SCHEMA COMPATIBLE</span>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Model description</th>
+                <th scope="col">Display tech</th>
+                <th scope="col">Size</th>
+                <th scope="col">On-mode</th>
+                <th scope="col">Standby</th>
+                <th scope="col">Stars</th>
+                <th scope="col">Est. cost / yr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Sony Bravia KD-32W830K</strong>
+                  <small>HDR Entry Series</small>
+                </td>
+                <td>Standard LED LCD</td>
+                <td>32&quot; (80cm)</td>
+                <td class="number">42.0 W</td>
+                <td class="number">0.45 W</td>
+                <td><span class="star">★ 5.5</span></td>
+                <td class="cost">$12.30</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Hisense 50A7KAU</strong>
+                  <small>Mid-range Smart UHD</small>
+                </td>
+                <td>Direct LED LCD</td>
+                <td>50&quot; (127cm)</td>
+                <td class="number">88.0 W</td>
+                <td class="number">0.50 W</td>
+                <td><span class="star">★ 5.0</span></td>
+                <td class="cost">$41.10</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>TCL 55C745</strong>
+                  <small>144Hz Gaming Edition</small>
+                </td>
+                <td>QLED Mini-LED</td>
+                <td>55&quot; (139cm)</td>
+                <td class="number">118.0 W</td>
+                <td class="number">0.40 W</td>
+                <td><span class="star">★ 4.5</span></td>
+                <td class="cost">$55.20</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Samsung QN65QN85C</strong>
+                  <small>Neo QLED Matrix</small>
+                </td>
+                <td>Neo QLED LCD</td>
+                <td>65&quot; (165cm)</td>
+                <td class="number">152.0 W</td>
+                <td class="number">0.50 W</td>
+                <td><span class="star">★ 4.5</span></td>
+                <td class="cost">$71.10</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>LG OLED65C3PSC</strong>
+                  <small>Cinema Self-lit Pixels</small>
+                </td>
+                <td>OLED Self-Lit</td>
+                <td>65&quot; (165cm)</td>
+                <td class="number">178.0 W</td>
+                <td class="number">0.50 W</td>
+                <td><span class="star">★ 4.0</span></td>
+                <td class="cost">$83.25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-note">
+          <span>Assumes 4.0 hrs daily operation + 20 hrs standby at 32c/kWh.</span>
+          <span>Illustrative sample data for learning purposes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Calculator ==================== -->
+    <section class="section" aria-labelledby="calculator-title">
+      <div class="calculator-panel">
+        <div class="calculator-heading">
+          <div>
+            <p class="eyebrow">Interactive client-side tool</p>
+            <h2 id="calculator-title">Appliance Energy Calculator</h2>
+            <p>Calculate the running cost of any household appliance.</p>
+          </div>
+          <span class="tag">VANILLA JS SANDBOX</span>
+        </div>
+
+        <form class="calculator-form" id="energy-calculator">
+          <div class="calculator-inputs">
+            <label for="model">
+              Reference model
+              <select id="model" name="model" aria-describedby="model-hint">
+                <option value="studio">Studio 43 — 65 W</option>
+                <option value="family" selected>Family 55 — 110 W</option>
+                <option value="cinema">Cinema 75 — 165 W</option>
+                <option value="custom">Custom wattage</option>
+              </select>
+              <span class="field-hint" id="model-hint">Selecting a preset loads its wattage.</span>
+            </label>
+
+            <label for="watts">
+              Appliance power (watts)
+              <input
+                id="watts"
+                name="watts"
+                type="number"
+                min="1"
+                step="1"
+                value="110"
+                inputmode="decimal"
+                aria-describedby="watts-hint watts-error"
+              >
+              <span class="field-hint" id="watts-hint">Check the rear compliance plate or manual.</span>
+              <span class="field-error" id="watts-error" hidden></span>
+            </label>
+
+            <label for="hours">
+              Hours used per day
+              <input
+                id="hours"
+                name="hours"
+                type="number"
+                min="0.1"
+                max="24"
+                step="0.1"
+                value="4"
+                inputmode="decimal"
+                aria-describedby="hours-hint hours-error"
+              >
+              <span class="field-hint" id="hours-hint">Estimated daily run time, 0–24 hours.</span>
+              <span class="field-error" id="hours-error" hidden></span>
+            </label>
+
+            <label for="price">
+              Electricity price (cents/kWh)
+              <input
+                id="price"
+                name="price"
+                type="number"
+                min="0.1"
+                step="0.1"
+                value="32"
+                inputmode="decimal"
+                aria-describedby="price-hint price-error"
+              >
+              <span class="field-hint" id="price-hint">Australian benchmark: approx. 30–35c.</span>
+              <span class="field-error" id="price-error" hidden></span>
+            </label>
+          </div>
+
+          <div class="calculator-foot">
+            <p class="form-status" id="form-status" role="status"></p>
+            <p class="live-hint">Results update automatically as you type.</p>
+          </div>
+
+          <div class="results" id="calculator-results" aria-live="polite">
+            <div class="results-title-row">
+              <span>Calculated output summary</span>
+              <span>Based on a 30-day billing cycle</span>
+            </div>
+            <p class="results-intro">Complete the fields to see an estimate.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Site footer ==================== -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>© <span data-current-year></span> Nguyen Tan Phat · COS30045 Data Visualisation, Swinburne University of Technology</p>
+      <p>Generative AI was used to assist with design/development.</p>
+    </div>
+  </footer>
+</body>
+</html>
