@@ -774,6 +774,61 @@ td.cost {
 }
 
 /* ==========================================================================
+   Televisions: data charts
+   ========================================================================== */
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.chart-figure {
+  display: grid;
+  align-content: start;
+  gap: .9rem;
+  margin: 0;
+  padding: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.chart-figure--wide {
+  grid-column: 1 / -1;
+}
+
+.chart-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.chart-figure figcaption {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.chart-figure figcaption strong {
+  display: block;
+  margin-bottom: .25rem;
+  color: var(--ink);
+  font-size: .95rem;
+}
+
+@media (max-width: 880px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-figure--wide {
+    grid-column: auto;
+  }
+}
+
+/* ==========================================================================
    Televisions: calculator
    ========================================================================== */
 .calculator-panel {

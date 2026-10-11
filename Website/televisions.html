@@ -228,6 +228,55 @@
       </div>
     </section>
 
+    <!-- ==================== Data charts ==================== -->
+    <section class="section" aria-labelledby="charts-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">What the dataset shows</p>
+          <h2 id="charts-title">Charts from the Australian TV registration data</h2>
+        </div>
+        <p>Four KNIME charts built from the same extract, with the key reading under each.</p>
+      </div>
+
+      <div class="chart-grid">
+        <figure class="chart-figure chart-figure--wide">
+          <img src="assets/img/chart-brands.png" width="1600" height="1044" loading="lazy"
+            alt="Bar chart of the top 15 TV brands by number of available models in Australia. SAMSUNG is highest at about 1,096 models, followed by KOGAN at about 790 and LG at about 680. HISENSE is about 260 and EKO about 190.">
+          <figcaption>
+            <strong>Brand range: Samsung lists the most available models</strong>
+            Top 15 brands by number of TV models listed as available in Australia, with Samsung variants combined. These are model counts, not units sold.
+          </figcaption>
+        </figure>
+
+        <figure class="chart-figure">
+          <img src="assets/img/chart-energy-per-area.png" width="1600" height="1044" loading="lazy"
+            alt="Grouped bar chart of mean labelled energy use per square metre of screen for LCD, LCD (LED) and OLED. For large screens, LCD and LCD (LED) are both about 418 kWh/m²/year and OLED is about 379. For medium screens, LCD is about 410, LCD (LED) about 441 and OLED about 428.">
+          <figcaption>
+            <strong>Per square metre, the technologies are close</strong>
+            Dividing by screen area removes most of the size effect. Within each size band the gaps are roughly 10% or less, and the order changes between bands.
+          </figcaption>
+        </figure>
+
+        <figure class="chart-figure">
+          <img src="assets/img/chart-screen-size.png" width="1600" height="1044" loading="lazy"
+            alt="Bar chart of average labelled energy consumption by screen size. Medium screens average about 400 kWh per year, large screens about 745 kWh per year and small screens about 160 kWh per year.">
+          <figcaption>
+            <strong>Bigger screens use far more energy</strong>
+            Average labelled consumption by screen size category. Size explains most of the difference, which is why raw kWh comparisons between technologies can mislead.
+          </figcaption>
+        </figure>
+
+        <figure class="chart-figure chart-figure--wide">
+          <img src="assets/img/chart-size-vs-energy.png" width="1600" height="1050" loading="lazy"
+            alt="Scatter plot of labelled energy consumption in kWh per year against screen size in inches, one point per model. Points rise from under 200 kWh at about 15 to 40 inches to roughly 1,000 kWh at about 75 inches. One outlier at about 115 inches sits near 2,650 kWh.">
+          <figcaption>
+            <strong>Energy rises with screen size, with one outlier</strong>
+            Each point is one model in the extract, across all countries. The trend is roughly linear. The outlier is a 115-inch TCL (115X955 Max) at 2,652 kWh per year, far above the rest.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <!-- ==================== Calculator ==================== -->
     <section class="section" aria-labelledby="calculator-title">
       <div class="calculator-panel">

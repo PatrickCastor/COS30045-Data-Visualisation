@@ -1,0 +1,1 @@
+I used an AI assistant (OpenCode) to help refine my KNIME workflow. Specifically, it assisted with: sorting and limiting the brand bar chart to the top 15 brands, normalising labelled energy consumption by screen area (kWh/m²) to control for screen size. I reviewed, executed and validated every change myself, and I understand and can explain the workflow and its findings.

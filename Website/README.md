@@ -1,5 +1,5 @@
 ## Generative AI Reflection
-**Tools used:** OpenCode Go GLM 5.3 Flash was used as the main workload for
+**Tools used:** OpenCode Go was used as the main workload for
 building the website, alongside ChatGPT Go, and Google Stitch was used to
 generate the website design from a written prompt.
 
