@@ -15,7 +15,7 @@
 - 4.7 one `<g>` per brand moved with `translate`, holding the bar + 2 labels; brand uses `text-anchor: end`.
 - Data made in KNIME (`knime/2026 TV Data.knwf`, top branch): available + sold in Australia, count per brand, keep brands with 20+ models.
 
-## 5.1 vertical bar chart (`dv-05-mulitchart-webpage/js/bar-chart.js`)
+## 5.1 vertical bar chart (`dv-05-multichart-webpage/js/bar-chart.js`)
 - Margin convention: `innerChart` group translated by margin.left/top; scales use innerWidth/innerHeight.
 - x = `scaleBand` (screen types), y = `scaleLinear` with range `[innerHeight, 0]` (bigger = higher).
 - Bar height = `innerHeight - yScale(value)`; bottom axis moved down with `translate(0, innerHeight)`.
