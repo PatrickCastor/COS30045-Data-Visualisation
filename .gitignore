@@ -1,6 +1,5 @@
-# Ignore everything except Submission and Website
+# Ignore everything except Submission
 /*
 !/.gitignore
 !/Submission/
-!/Website/
 .DS_Store
