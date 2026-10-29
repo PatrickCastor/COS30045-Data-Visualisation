@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Energy Consumption – Interactivity</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/visualisation.css">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Exercises"><a class="site-nav__brand" href="../index.html"><span>COS30045</span> · Demonstration 2</a><div class="site-nav__links"><a href="../dv-04-svg-house/index.html">4.1 SVG House</a><a href="../dv-04-bar-chart-exercise/index.html">4.3–4.7 Bar Chart</a><a href="../dv-05-mulitchart-webpage/index.html">5 Multi-chart</a><a href="../dv-06-interactivity/index.html" aria-current="page">6 Interactivity</a></div></nav>
+  <header>
+    <h1>TV Energy Consumption</h1>
+  </header>
+
+  <main>
+    <h2>Energy Consumption for different TV screen types and sizes</h2>
+    <p>TVs vary considerably in energy consumption.</p>
+
+    <!-- 6.2 filter buttons are added here by interactions.js -->
+    <div class="filter-row"><span>Screen type:</span><div id="filters_screen"></div></div>
+    <!-- Extension: screen size filter -->
+    <div class="filter-row"><span>Screen size:</span><div id="filters_size"></div></div>
+
+    <!-- 6.1 the histogram is drawn here -->
+    <div id="histogram" class="responsive-svg-container"></div>
+
+    <!-- 6.3 the scatterplot is drawn here, 6.4 adds its tooltip -->
+    <h2>Energy consumption by star rating</h2>
+    <p>Each dot is one TV model, coloured by screen type. Hover a dot for its brand, model and screen size. The filter buttons above also filter this chart.</p>
+    <div id="scatterplot" class="responsive-svg-container"></div>
+
+    <h3>Data source</h3>
+    <p><a href="https://data.gov.au/data/dataset/energy-rating-for-household-appliances">Energy Rating Data for household appliances – Televisions</a><br>Downloaded Jan 2026</p>
+  </main>
+
+  <footer>© Data Visualisation Weeks 6–7</footer>
+
+  <!-- Order matters: d3 first, then the files that use it.
+       load-data.js calls functions from the later files, but only after the CSV
+       has finished loading, by which time every file has run. -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="js/load-data.js"></script>
+  <script src="js/shared-constants.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+</body>
+</html>

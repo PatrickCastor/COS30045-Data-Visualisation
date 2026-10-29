@@ -1,0 +1,9 @@
+/* General page styling. Colours, fonts and buttons come from ../../site.css (shared Ocean Depths theme) */
+header { max-width: 1040px; margin: 0 auto; padding: 32px 24px 0; box-sizing: border-box; }
+html body > main { padding-top: 8px; }   /* beats site.css, which loads later */
+footer { max-width: 992px; margin: 0 auto 32px; box-sizing: content-box; padding: 16px 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+
+/* 6.2 filter buttons (button look is in site.css; .active = the selected button) */
+.filter-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.filter-row > span { min-width: 96px; font-weight: 600; color: var(--ink-2); }
+#histogram.responsive-svg-container, #scatterplot.responsive-svg-container { max-width: none; margin: 20px 0 0; padding: 0; }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 4.1 – SVG House</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+<nav><a href="index.html">Home</a><a href="house.html">4.1 SVG House</a><a href="dv-04-bar-chart-exercise/index.html">4.3–4.7 Bar Chart</a><a href="dv-05-mulitchart-webpage/index.html">5 Multi-chart</a><a href="dv-06-interactivity/index.html">6 Interactivity</a></nav>
+<main>
+<h1>Exercise 4.1 – SVG House</h1>
+<p>A house drawn with plain SVG elements: rect, polygon, circle, line.</p>
+<div class="chart">
+<svg width="400" height="320">
+  <!-- ground -->
+  <rect x="0" y="280" width="400" height="40" fill="#7cb342"/>
+  <!-- sun -->
+  <circle cx="340" cy="60" r="35" fill="#fdd835"/>
+  <!-- walls -->
+  <rect x="100" y="160" width="200" height="120" fill="#ffccbc" stroke="#5d4037" stroke-width="2"/>
+  <!-- roof: polygon points are x,y pairs -->
+  <polygon points="80,160 200,70 320,160" fill="#c62828" stroke="#5d4037" stroke-width="2"/>
+  <!-- door -->
+  <rect x="180" y="210" width="40" height="70" fill="#6d4c41"/>
+  <circle cx="212" cy="248" r="3" fill="#ffd54f"/>
+  <!-- windows -->
+  <rect id="window-left" x="120" y="180" width="40" height="40" fill="#81d4fa" stroke="#5d4037"/>
+  <rect id="window-right" x="240" y="180" width="40" height="40" fill="#81d4fa" stroke="#5d4037"/>
+  <line x1="140" y1="180" x2="140" y2="220" stroke="#5d4037"/>
+  <line x1="260" y1="180" x2="260" y2="220" stroke="#5d4037"/>
+  <text x="200" y="305" text-anchor="middle" fill="#fff">My SVG House</text>
+</svg>
+</div>
+<button id="lights">Turn lights on</button>
+<script>
+// Manipulating SVG with D3: select existing elements and change their attributes
+d3.select("#lights").on("click", function () {
+  const on = d3.select(this).text() === "Turn lights on";
+  d3.selectAll("#window-left, #window-right").attr("fill", on ? "#ffee58" : "#81d4fa");
+  d3.select(this).text(on ? "Turn lights off" : "Turn lights on");
+});
+</script>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COS30045 Demonstration 2 – Weeks 4 to 6</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Exercises"><a class="site-nav__brand" href="index.html"><span>COS30045</span> · Demonstration 2</a><div class="site-nav__links"><a href="dv-04-svg-house/index.html">4.1 SVG House</a><a href="dv-04-bar-chart-exercise/index.html">4.3–4.7 Bar Chart</a><a href="dv-05-mulitchart-webpage/index.html">5 Multi-chart</a><a href="dv-06-interactivity/index.html">6 Interactivity</a></div></nav>
+<header class="hero">
+  <p class="eyebrow">COS30045 Data Visualisation · Demonstration 2</p>
+  <h1>Weeks 4–6: building charts with D3</h1>
+  <p class="lede">From hand-drawn SVG to interactive charts, built on Australian TV energy-rating data
+    and electricity spot prices. Data prepared in KNIME, drawn with D3 v7.</p>
+</header>
+
+<main class="cards">
+  <a class="card" href="dv-04-svg-house/index.html">
+    <img src="img/house.png" alt="SVG drawing of a house with a red roof, two windows and a sun">
+    <div class="card__body">
+      <span class="tag">Exercise 4.1</span>
+      <h2>SVG House</h2>
+      <p>Shapes written by hand in SVG: rect, polygon, circle, line. A button uses D3 to turn the lights on.</p>
+      <p class="skills">SVG elements · D3 selections</p>
+    </div>
+  </a>
+  <a class="card" href="dv-04-bar-chart-exercise/index.html">
+    <img src="img/bar-chart.png" alt="Horizontal bar chart of TV models per brand, Samsung highest">
+    <div class="card__body">
+      <span class="tag">Exercises 4.3–4.7</span>
+      <h2>TV Brand Bar Chart</h2>
+      <p>Number of TV models for each brand sold in Australia, sorted from most to fewest.</p>
+      <p class="skills">CSV loading · data binding · linear &amp; band scales · labels</p>
+    </div>
+  </a>
+  <a class="card" href="dv-05-mulitchart-webpage/index.html">
+    <img src="img/multi-chart.png" alt="Line chart of average electricity spot price rising from 1998 to 2024">
+    <div class="card__body">
+      <span class="tag">Exercises 5.1–5.3</span>
+      <h2>Multi-chart Page</h2>
+      <p>Energy use of 55" TVs by screen type, electricity prices over time, and the share of small, medium and large TVs.</p>
+      <p class="skills">Bar · scatter · line · donut · axes · margins</p>
+    </div>
+  </a>
+  <a class="card" href="dv-06-interactivity/index.html">
+    <img src="img/interactivity.png" alt="Histogram of TV energy consumption, most TVs under 600 kWh per year">
+    <div class="card__body">
+      <span class="tag">Exercises 6.1–6.4</span>
+      <h2>Histogram &amp; Scatterplot</h2>
+      <p>Energy use of 4,233 TVs: a histogram with screen type and size filters, and a scatterplot of star rating vs energy with hover tooltips.</p>
+      <p class="skills">d3.bin · filters · transitions · colour scale · legend · tooltips</p>
+    </div>
+  </a>
+</main>
+
+<footer class="site-footer">
+  Data: <a href="https://data.gov.au/data/dataset/energy-rating-for-household-appliances">Energy Rating Data – Televisions</a>
+  and Australian Energy Regulator spot prices · Built for COS30045, Swinburne University
+</footer>
+</body>
+</html>

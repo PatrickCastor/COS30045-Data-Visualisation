@@ -1,0 +1,9 @@
+/* Colours, fonts and nav come from ../site.css (shared Ocean Depths theme) */
+
+/* 4.3 Step 2: makes the SVG container centred and responsive to window size */
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+}

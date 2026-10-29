@@ -1,0 +1,67 @@
+/* ===== Shared theme (Ocean Depths) - used by the home page and every exercise page ===== */
+:root {
+  --navy: #1a2332; --teal: #2d8b8b; --teal-dark: #1f6b6b; --seafoam: #a8dadc; --cream: #f1faee;
+  --surface: #ffffff; --ink: #1a2332; --ink-2: #3f4d5c; --muted: #6b7785; --line: #d6e4e2;
+  --font: "DejaVu Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font); line-height: 1.55; }
+a { color: var(--teal-dark); }
+
+/* Navigation bar */
+nav.site-nav {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px 32px; max-width: 1040px; margin: 0 auto; padding: 28px 24px; box-sizing: border-box;
+  background: transparent; font-family: var(--font); font-size: 16px;
+}
+nav.site-nav a { color: var(--ink-2); text-decoration: none; margin: 0; }
+nav.site-nav .site-nav__brand { font-size: clamp(22px, 2.6vw, 30px); font-weight: 800; letter-spacing: -.01em; color: var(--navy); line-height: 1.1; }
+nav.site-nav .site-nav__brand span { color: var(--teal); }
+nav.site-nav .site-nav__links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+
+/* Links: underline grows from the left and text goes bold on hover / on the current page.
+   Bold is drawn with text-shadow so the link doesn't get wider and push its neighbours. */
+nav.site-nav .site-nav__links a { position: relative; padding: 4px 0; transition: color .2s, text-shadow .2s; }
+nav.site-nav .site-nav__links a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; border-radius: 2px;
+  background: var(--teal); transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+}
+nav.site-nav .site-nav__links a:hover, nav.site-nav .site-nav__links a[aria-current="page"] {
+  color: var(--navy); text-shadow: .45px 0 currentColor, -.45px 0 currentColor;
+}
+nav.site-nav .site-nav__links a:hover::after, nav.site-nav .site-nav__links a[aria-current="page"]::after { transform: scaleX(1); }
+nav.site-nav a:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { nav.site-nav .site-nav__links a, nav.site-nav .site-nav__links a::after { transition: none; } }
+
+/* Exercise page layout */
+.page, .responsive-svg-container, body > main { max-width: 1040px; margin: 0 auto; padding: 32px 24px 48px; box-sizing: border-box; }
+h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; color: var(--navy); }
+h2 { margin: 36px 0 12px; font-size: 20px; color: var(--navy); }
+h3 { margin: 28px 0 8px; font-size: 16px; color: var(--navy); }
+p { color: var(--ink-2); }
+
+/* Charts sit on a white card */
+.chart, .responsive-svg-container > svg, #bar-chart svg, #line-chart svg, #donut-chart svg, #histogram svg, #scatterplot svg {
+  display: block; width: 100%; height: auto; box-sizing: border-box;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(26, 35, 50, .08);
+}
+.chart { width: auto; padding: 16px; }
+.chart svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.responsive-svg-container > svg { max-width: 640px; padding: 12px; }   /* 4.x bar chart is tall, keep it readable */
+#bar-chart svg, #line-chart svg, #donut-chart svg, #histogram svg, #scatterplot svg { padding: 8px; }
+
+/* Recessive axes */
+.tick text { fill: var(--muted); font-family: var(--font); }
+.domain, .tick line { stroke: #b9c6cc; }
+
+/* Buttons (4.1 lights, 6.2 filters) */
+button, .filter {
+  font: 600 14px var(--font); color: #fff; background: var(--teal);
+  border: none; border-radius: 999px; padding: 8px 18px; margin: 4px 4px 4px 0; cursor: pointer;
+  transition: background .15s;
+}
+button:hover, .filter:hover { background: var(--teal-dark); }
+button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+.filter.active { background: var(--navy); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { button, .filter { transition: none; } }

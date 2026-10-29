@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV Energy Consumption – Multi-chart page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Exercises"><a class="site-nav__brand" href="../index.html"><span>COS30045</span> · Demonstration 2</a><div class="site-nav__links"><a href="../dv-04-svg-house/index.html">4.1 SVG House</a><a href="../dv-04-bar-chart-exercise/index.html">4.3–4.7 Bar Chart</a><a href="../dv-05-mulitchart-webpage/index.html" aria-current="page">5 Multi-chart</a><a href="../dv-06-interactivity/index.html">6 Interactivity</a></div></nav>
+
+  <div class="responsive-svg-container">
+    <h1>TV Energy Consumption</h1>
+
+    <h2>5.1 Which screen type uses the most energy? (55" TVs)</h2>
+    <!-- id lets each chart's js file find ITS div when there are several charts on the page -->
+    <div id="bar-chart"></div>
+
+    <h2>5.2 Average electricity spot price in Australia, 1998–2024</h2>
+    <div id="line-chart"></div>
+
+    <h2>5.3 Proportion of small, medium and large TV models</h2>
+    <div id="donut-chart"></div>
+  </div>
+
+  <!-- one js file per chart -->
+  <script src="js/bar-chart.js"></script>
+  <script src="js/line-chart.js"></script>
+  <script src="js/donut-chart.js"></script>
+</body>
+</html>

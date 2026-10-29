@@ -1,0 +1,13 @@
+/* Styling shared by the charts */
+.responsive-svg-container { width: 100%; max-width: 900px; }
+.responsive-svg-container svg { width: 100%; height: auto; }
+.axis-label { font-size: 13px; fill: var(--ink-2); }
+.tick text { font-size: 11px; }
+
+/* Histogram tooltip (extension, made in histogram.js). position: relative on #histogram = tooltip is placed inside the chart */
+#histogram { position: relative; }
+.histogram-tooltip {
+  position: absolute; pointer-events: none; opacity: 0; transition: opacity .15s;
+  background: var(--navy); color: #fff; font-size: 13px; line-height: 1.4;
+  padding: 8px 12px; border-radius: 8px; box-shadow: 0 4px 12px rgba(26, 35, 50, .2); white-space: nowrap;
+}

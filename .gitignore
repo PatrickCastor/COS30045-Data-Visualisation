@@ -1,6 +1,6 @@
-Study/*
+# Ignore everything except Submission and Website
+/*
+!/.gitignore
+!/Submission/
+!/Website/
 .DS_Store
-.serena/*
-.opencode/*
-docs/*
-Resources/*
