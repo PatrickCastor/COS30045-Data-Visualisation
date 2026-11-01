@@ -11,8 +11,6 @@ Open `index.html` (the home page) to reach every exercise.
 
 Other folders:
 - `knime/` – KNIME workflows (`2026 TV Data.knwf` makes the week 4 and week 5 CSVs) and the raw downloads from Canvas.
-- `docs/` – GenAI declaration and Q&A notes. Not part of the websites.
-- `_to_delete/` – old draft files, safe to delete.
 
 Run locally: in this folder run `python3 -m http.server`, then open http://localhost:8000.
 Opening the .html files directly will not work (browsers block d3.csv on file://) - use Live Server or the command above.

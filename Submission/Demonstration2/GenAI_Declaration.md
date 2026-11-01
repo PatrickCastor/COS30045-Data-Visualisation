@@ -1,0 +1,2 @@
+**Generative AI Declaration**
+In this project, I use Claude Code (Opus 5.5) to instruct me through D3.js, how to write and customize the code, configuring the color and layout of the charts/graphs, then I use Front-end design skills to create the website to put the data inside.
